@@ -39,7 +39,7 @@ li {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px dashed red;
+  /* outline: 2px dashed red; */
 }
 
 /*===========Body=========*/
@@ -117,7 +117,6 @@ header {
 }
 .site-nav .link.current {
   color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -130,20 +129,24 @@ header {
   text-decoration: none;
 }
 
-/*========== Nav-contact ===========*/
+/*=====================================NAV-CONTACT===================================*/
 
 .nav-contact {
   display: flex;
   align-items: center;
 }
-.nav-contact .li {
+.nav-contact .nav-contact-item {
   margin-left: 50px;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
-.nav-contact .li:first-child {
+.nav-contact .nav-contact-item:first-child {
   margin-left: 0px;
 }
-.nav-contact .tel,
-.nav-contact .mail {
+.nav-contact .tel-link,
+.nav-contact .mail-link {
   color: var(--paragraph-color);
   font-size: 14px;
   font-family: var(--font-text-title);
@@ -152,9 +155,28 @@ header {
   letter-spacing: 0.02em;
 
   text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
-.nav-contact .tel:focus,
-.nav-contact .tel:hover {
+.nav-contact .tel-link:focus,
+.nav-contact .tel-link:hover {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-family: var(--font-text-title);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.nav-contact .mail-link:focus,
+.nav-contact .mail-link:hover {
   color: var(--secondary-color);
   font-size: 14px;
   font-family: var(--font-text-title);
@@ -163,18 +185,35 @@ header {
 
   text-decoration: none;
 }
-.nav-contact .mail:focus,
-.nav-contact .mail:hover {
-  color: var(--secondary-color);
-  font-size: 14px;
-  font-family: var(--font-text-title);
-  font-weight: 500;
-  letter-spacing: 0.02em;
 
-  text-decoration: none;
+/*==================================END NAV-CONTACT===================================*/
+
+/*=======================================ICON-HEADER=====================================*/
+.icon-header-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
 }
+.icon-header-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.icon-header-tel,
+.icon-header-mail {
+  fill: var(--paragraph-color);
+}
+.nav-contact .tel-link:hover .icon-header-tel,
+.nav-contact .tel-link:focus .icon-header-tel {
+  fill: #2196f3;
+}
+.nav-contact .mail-link:hover .icon-header-mail,
+.nav-contact .mail-link:focus .icon-header-mail {
+  fill: #2196f3;
+}
+/*===================================END ICON-HEADER=====================================*/
 
-/*========== Hero =========*/
+/*=======================================HERO============================================*/
 .hero {
   max-width: 1600px;
   margin: 0 auto;
@@ -216,7 +255,9 @@ header {
 
   margin-top: 30px;
 }
-/*---Feature---*/
+/*=============================================END HERO==============================*/
+
+/*=============================================FEATURE===============================*/
 .section.feature {
   padding-top: 94px;
   padding-bottom: 47px;
@@ -277,9 +318,9 @@ header {
 
   margin-top: 10px;
 }
+/*==============================================END FEATURE================================*/
 
-/*---Work Team---*/
-
+/*==============================================WORK-TEAM==================================*/
 .section.work {
   padding-top: 47px;
   padding-bottom: 94px;
@@ -295,8 +336,9 @@ header {
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
+/*==================================END WORK-TEAM=======================================*/
 
-/*---Our-team---*/
+/*=====================================OUR-TEAM=========================================*/
 
 .section.team {
   background: #f5f4fa;
@@ -341,6 +383,8 @@ header {
   line-height: 1.1;
   letter-spacing: 0.03em;
 }
+/*===================================END OUR-TEAM=======================================*/
+
 /*====================================OUR-CLIENT========================================*/
 .section-client {
   padding-top: 94px;
@@ -424,8 +468,9 @@ header {
 .icon-link:hover .icon {
   fill: #ffffff;
 }
-/*---Footer---*/
+/*================================================END SVG-SOCIAL==========================================*/
 
+/*===================================================FOOTER===============================================*/
 .footer {
   background-color: #2f303a;
   padding: 60px 0px;
@@ -514,7 +559,9 @@ header {
 .footer .tel:focus {
   color: var(--secondary-color);
 }
-/*==========================================================PORTFOLIO=============================================*/
+/*=======================================================END FOOTER===============================================*/
+
+/*========================================================PORTFOLIO=============================================*/
 .content {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -573,6 +620,9 @@ header {
   flex-basis: calc((100% - 90px) / 3);
   border: 2px solid #eeeeee;
 }
+.work-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .work-list-name {
   padding: 20px 24px;
 }
@@ -594,3 +644,4 @@ header {
 
   margin-top: 4px;
 }
+/*========================================================END PORTFOLIO=============================================*/
