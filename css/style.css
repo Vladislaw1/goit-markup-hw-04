@@ -8,6 +8,7 @@
   --paragraph-color: #757575;
   --bacground-color: #ffffff;
   --pt-: 94px;
+  --pb-: 94px;
 }
 * {
   margin: 0px;
@@ -189,12 +190,15 @@ header {
 /*==================================END NAV-CONTACT===================================*/
 
 /*=======================================ICON-HEADER=====================================*/
+
 .icon-header-mail {
+  flex-shrink: 0;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 .icon-header-tel {
+  flex-shrink: 0;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -203,15 +207,17 @@ header {
 .icon-header-mail {
   fill: var(--paragraph-color);
 }
-.nav-contact .tel-link:hover .icon-header-tel,
-.nav-contact .tel-link:focus .icon-header-tel {
+
+.tel-link:hover .icon-header-tel,
+.tel-link:focus .icon-header-tel {
   fill: #2196f3;
 }
-.nav-contact .mail-link:hover .icon-header-mail,
-.nav-contact .mail-link:focus .icon-header-mail {
+.mail-link:hover .icon-header-mail,
+.mail-link:focus .icon-header-mail {
   fill: #2196f3;
 }
-/*===================================END ICON-HEADER=====================================*/
+
+/*===================================END ICON-HEADER=====================================
 
 /*=======================================HERO============================================*/
 .hero {
@@ -220,7 +226,8 @@ header {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-size: cover;
 }
 
 .hero-div {
@@ -280,7 +287,7 @@ header {
   /* outline: 1px dashed red; */
   display: block;
   content: '';
-  /* width: 270px; */
+  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
@@ -429,7 +436,6 @@ header {
 .social-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 .social-list-item {
   display: flex;
@@ -451,7 +457,7 @@ header {
 }
 .icon-link {
   /* outline: 2px solid red; */
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;

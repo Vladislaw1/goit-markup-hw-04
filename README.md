@@ -13,3 +13,5 @@ h1, h2, h3, h4, h5, h6{ margin:0; } ul,ol{ margin:0; padding:0; }
 
 ФОРМУЛА /\***_CALC_**\
 calc((100% - кол. px) / кол.элементов)
+
+backgroung-orign позиционирование изображения в боксе
