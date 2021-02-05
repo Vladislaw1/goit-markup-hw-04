@@ -58,6 +58,8 @@ li {
   font-size: 36px;
   line-height: 1.16;
 
+  margin-bottom: 50px;
+
   text-align: center;
 }
 
@@ -323,7 +325,6 @@ header {
   padding-bottom: 94px;
 }
 .work-team {
-  margin-top: 50px;
   margin-left: -30px;
   justify-content: center;
   display: flex;
@@ -342,7 +343,6 @@ header {
   padding: 94px 0px;
 }
 .team-list {
-  margin-top: 50px;
   display: flex;
   margin-right: -30px;
 }
