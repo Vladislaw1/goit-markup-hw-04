@@ -208,11 +208,11 @@ header {
 
 .tel-link:hover .icon-header-tel,
 .tel-link:focus .icon-header-tel {
-  fill: #2196f3;
+  fill: currentColor;
 }
 .mail-link:hover .icon-header-mail,
 .mail-link:focus .icon-header-mail {
-  fill: #2196f3;
+  fill: currentColor;
 }
 
 /*==================================END NAV-CONTACT===================================*/
