@@ -138,8 +138,8 @@ header {
 }
 .nav-contact .nav-contact-item {
   margin-left: 50px;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -157,7 +157,7 @@ header {
 
   text-decoration: none;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   padding-top: 2px;
@@ -187,8 +187,6 @@ header {
   text-decoration: none;
 }
 
-/*==================================END NAV-CONTACT===================================*/
-
 /*=======================================ICON-HEADER=====================================*/
 
 .icon-header-mail {
@@ -217,7 +215,7 @@ header {
   fill: #2196f3;
 }
 
-/*===================================END ICON-HEADER=====================================
+/*==================================END NAV-CONTACT===================================*/
 
 /*=======================================HERO============================================*/
 .hero {
@@ -226,7 +224,7 @@ header {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../img/hero.jpg');
   background-size: cover;
 }
 
