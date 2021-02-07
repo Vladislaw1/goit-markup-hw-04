@@ -754,12 +754,11 @@ header {
 }
 
 .work-list-link:hover .text-img,
-.work-list-link:hover .text-img {
-  /* opacity: 1; */
+.work-list-link:focus .text-img {
   transform: translateY(0px);
 }
 .work-list-link:hover .box-img::before,
-.work-list-link:hover .box-img::before {
+.work-list-link:focus .box-img::before {
   transform: translateY(0px);
 }
 /*=======================================================END PORTFOLIO=============================================*/
