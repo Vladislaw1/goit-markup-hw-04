@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Studio</title>
 </head>
@@ -70,7 +71,7 @@
 
             <div class="hero-div">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button" type="button">Заказать услугу</button>
+                <button class="button " data-modal-open >Заказать услугу</button>
             </div>
 
         </section>
@@ -418,10 +419,15 @@
             </div>
             
         </div>
-        
-
-        
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <button data-modal-close class="exit">Exit</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
